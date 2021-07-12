@@ -1,0 +1,61 @@
+<!--index.wxml-->
+
+<view class="duration-touch-view" 
+bindtouchstart="touchStart" 
+bindtouchmove="touchMove" 
+bindtouchend="touchEnd" >
+  <view class="container">
+    <!-- 手势事件：https://www.jianshu.com/p/d4bb2f8eedc3 -->
+    <!-- 手势事件：https://www.jianshu.com/p/1496c79e4e04-->
+    
+    <view class="layout_vertical">
+    <view class="title"> 2048 </view>
+
+    </view>
+    <view class="layout_horizontal">
+    <button bindtap="main"  plain='true'  style="font-size:30rpx; height: 30px; line-height: 10px; width: 200rpx;text-align: center;">New</button>
+ 
+    <!-- 加空格:https://jingyan.baidu.com/article/f3ad7d0f530ab909c3345bc4.html -->
+    <text decode="{{true}}"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </text>
+    <view class="getscore">{{score}}</view>
+   
+     </view>
+     <text decode="{{true}}"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </text>
+<view class="layout_vertical">
+
+  <!--横向均分  -->
+<view class="layout_horizontal">
+  <view class="gezi{{num11}}">{{t11}}</view>
+  <view class="gezi{{num12}}">{{t12}}</view>
+  <view class="gezi{{num13}}">{{t13}}</view>
+  <view class="gezi{{num14}}">{{t14}}</view>
+</view>
+
+<view class="layout_horizontal">
+  <view class="gezi{{num21}}">{{t21}}</view>
+  <view class="gezi{{num22}}">{{t22}}</view>
+  <view class="gezi{{num23}}">{{t23}}</view>
+  <view class="gezi{{num24}}">{{t24}}</view>
+</view>
+
+<view class="layout_horizontal">
+  <view class="gezi{{num31}}">{{t31}}</view>
+  <view class="gezi{{num32}}">{{t32}}</view>
+  <view class="gezi{{num33}}">{{t33}}</view>
+  <view class="gezi{{num34}}">{{t34}}</view>
+</view>
+
+<view class="layout_horizontal">
+  <view class="gezi{{num41}}">{{t41}}</view>
+  <view class="gezi{{num42}}">{{t42}}</view>
+  <view class="gezi{{num43}}">{{t43}}</view>
+  <view class="gezi{{num44}}">{{t44}}</view>
+</view>
+
+</view>
+  
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+</view>
